@@ -4,10 +4,12 @@
  * Subclass of Characters for Devil
  */
 
+import java.util.*;
+
 public class Devil extends Characters{
 	private String hornType;
 	private String hornColor;
-	private String[] devilLines = new String[14];
+	private ArrayList<String> devilLines = new ArrayList<>();;
 	
 	public Devil(String hairColor, String eyeColor, double height, double weight, String status, String physique,
 			int age, String personality, String complexity, String name, String gender) {
@@ -24,23 +26,23 @@ public class Devil extends Characters{
 	}
 	
 	public void giveLines() {
-		devilLines[0] = "â€œThere isâ€¦â€ a raspy voice sounded from behind.";
-		devilLines[1] = "â€œMe?â€";
-		devilLines[2] = "The man responded, â€œdonâ€™t worry about who I am. Instead, worry of the bountiful offers I can provide.â€";
-		devilLines[3] = " â€œHmmâ€¦â€ the man stood up and paced around the room with his hands tucked behind his back.";
-		devilLines[4] = "â€œAmelia?â€";
-		devilLines[5] = "â€œDo you not wish for an eternal paradiseâ€¦ just the two of you? I can grant that for you, given that you execute three of my orders.â€";
-		devilLines[6] = "â€œI wonder. I wonder indeed. Just how long your confidence will last.â€";
-		devilLines[7] = "â€œSearching for me?â€";
-		devilLines[8] = "â€œThe third bidding will come later,â€ the devil replied, â€œdo not be so impatient.â€";
-		devilLines[9] = "â€œComplete the bidding,â€ the devil whispered in Williamâ€™s ear.";
-		devilLines[10] = "â€œFinish it.â€";
-		devilLines[11] = "â€œArenâ€™t you tired of him calling you a failure? Finish it,â€ the devil snickered, â€œyouâ€™ve come so far. Amelia is waiting for you.â€";
-		devilLines[12] = "â€œThen why are you holding that knife in your hand?â€";
-		devilLines[13] = "â€œI am a man of my words,â€ the devil humbly bowed.";
+		devilLines.add("“There is…” a raspy voice sounded from behind.");
+		devilLines.add("“Me?”");
+		devilLines.add("The man responded, “don’t worry about who I am. Instead, worry of the bountiful offers I can provide.”");
+		devilLines.add(" “Hmm…” the man stood up and paced around the room with his hands tucked behind his back.");
+		devilLines.add("“Amelia?”");
+		devilLines.add("“Do you not wish for an eternal paradise… just the two of you? I can grant that for you, given that you execute three of my orders.”");
+		devilLines.add("“I wonder. I wonder indeed. Just how long your confidence will last.”");
+		devilLines.add("“Searching for me?”");
+		devilLines.add("“The third bidding will come later,” the devil replied, “do not be so impatient.”");
+		devilLines.add("“Complete the bidding,” the devil whispered in William’s ear.");
+		devilLines.add("“Finish it.”");
+		devilLines.add("“Aren’t you tired of him calling you a failure? Finish it,” the devil snickered, “you’ve come so far. Amelia is waiting for you.”");
+		devilLines.add("“Then why are you holding that knife in your hand?”");
+		devilLines.add("“I am a man of my words,” the devil humbly bowed.");
 	}
 	
 	public String getDevilLine(int line) {
-		return devilLines[line];
+		return devilLines.get(line);
 	}
 }

@@ -4,9 +4,11 @@
  * Subclass of Characters for William's unnamed Father
  */
 
+import java.util.*;
+
 public class Father extends Characters {
 	private String moustacheType;
-	private String[] fatherLines = new String[7];
+	private ArrayList<String> fatherLines = new ArrayList<>();
 	
 	public Father(String hairColor, String eyeColor, double height, double weight, String status, String physique,
 			int age, String personality, String complexity, String name, String gender) {
@@ -21,19 +23,19 @@ public class Father extends Characters {
 	}
 	
 	public void giveLines() {
-		fatherLines[0] = "â€œGet out!â€";
-		fatherLines[1] = "â€œYou failure of a son! If only it wasnâ€™t for-â€";
-		fatherLines[2] = "â€œWhy,â€ Williamâ€™s father asked, â€œwhat in the devil made you do this?â€";
-		fatherLines[3] = "â€œAhh, William,â€ his father sighed";
-		fatherLines[4] = "â€œOh how much of a failure I was. I tried so desperately and still couldnâ€™t raise you well. I am so sorry William, I am ashamed.â€";
-		fatherLines[5] = "â€œOh! So you come into my room with a knife, are you trying to kill me? I raised you! You insolent child! Have you never learned anything from me!â€";
-		fatherLines[6] = "His father raised his finger to Williamâ€™s lips, â€œhush now child, your father deserved this, you did yourself a favor. I have failed as a father, and for an apology, I sacrifice myself to you.â€";
+		fatherLines.add("“Get out!”");
+		fatherLines.add("“You failure of a son! If only it wasn’t for-”");
+		fatherLines.add("“Why,” William’s father asked, “what in the devil made you do this?”");
+		fatherLines.add("“Ahh, William,” his father sighed");
+		fatherLines.add("“Oh how much of a failure I was. I tried so desperately and still couldn’t raise you well. I am so sorry William, I am ashamed.”");
+		fatherLines.add("“Oh! So you come into my room with a knife, are you trying to kill me? I raised you! You insolent child! Have you never learned anything from me!”");
+		fatherLines.add("His father raised his finger to William’s lips, “hush now child, your father deserved this, you did yourself a favor. I have failed as a father, and for an apology, I sacrifice myself to you.”");
 	}
 	
 	public String getMoustacheType() {
 		return moustacheType;
 	}
 	public String getFatherLine(int line) {
-		return fatherLines[line];
+		return fatherLines.get(line);
 	}
 }
