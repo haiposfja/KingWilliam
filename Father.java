@@ -6,7 +6,7 @@
 
 public class Father extends Characters {
 	private String moustacheType;
-	private String[] fatherLines = new String[4];
+	private String[] fatherLines = new String[7];
 	
 	public Father(String hairColor, String eyeColor, double height, double weight, String status, String physique,
 			int age, String personality, String complexity, String name, String gender) {
@@ -21,13 +21,13 @@ public class Father extends Characters {
 	}
 	
 	public void giveLines() {
-		fatherLines[0] = "“Get out!”";
-		fatherLines[1] = "“You failure of a son! If only it wasn’t for-”";
-		fatherLines[2] = "“Why,” William’s father asked, “what in the devil made you do this?”";
-		fatherLines[3] = "“Ahh, William,” his father sighed";
-		fatherLines[4] = "“Oh how much of a failure I was. I tried so desperately and still couldn’t raise you well. I am so sorry William, I am ashamed.”";
-		fatherLines[5] = "“Oh! So you come into my room with a knife, are you trying to kill me? I raised you! You insolent child! Have you never learned anything from me!”";
-		fatherLines[6] = "His father raised his finger to William’s lips, “hush now child, your father deserved this, you did yourself a favor. I have failed as a father, and for an apology, I sacrifice myself to you.”";
+		fatherLines[0] = "â€œGet out!â€";
+		fatherLines[1] = "â€œYou failure of a son! If only it wasnâ€™t for-â€";
+		fatherLines[2] = "â€œWhy,â€ Williamâ€™s father asked, â€œwhat in the devil made you do this?â€";
+		fatherLines[3] = "â€œAhh, William,â€ his father sighed";
+		fatherLines[4] = "â€œOh how much of a failure I was. I tried so desperately and still couldnâ€™t raise you well. I am so sorry William, I am ashamed.â€";
+		fatherLines[5] = "â€œOh! So you come into my room with a knife, are you trying to kill me? I raised you! You insolent child! Have you never learned anything from me!â€";
+		fatherLines[6] = "His father raised his finger to Williamâ€™s lips, â€œhush now child, your father deserved this, you did yourself a favor. I have failed as a father, and for an apology, I sacrifice myself to you.â€";
 	}
 	
 	public String getMoustacheType() {
