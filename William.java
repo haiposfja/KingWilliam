@@ -12,6 +12,8 @@ public class William extends Characters {
 	public William(String hairColor, String eyeColor, double height, double weight, String status, String physique,
 			int age, String personality, String complexity, String name, String gender) {
 		super(hairColor, eyeColor, height, weight, status, physique, age, personality, complexity, name, gender);
+	    crownColor = "yellow";
+	    crownWeight = 1.2;
 	}
 
 	public William(String hairColor, String eyeColor, double height, double weight, String status, String physique,
