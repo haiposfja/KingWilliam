@@ -42,6 +42,13 @@ public class Devil extends Characters{
 		devilLines.add("“I am a man of my words,” the devil humbly bowed.");
 	}
 	
+	public String getHornType() {
+		return hornType;
+	}
+	
+	public String getHornColor() {
+		return hornColor;
+	}
 	public String getDevilLine(int line) {
 		return devilLines.get(line);
 	}
